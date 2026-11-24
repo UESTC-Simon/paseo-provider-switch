@@ -1,0 +1,42 @@
+{
+  "settingsScreen": "Provider Switch",
+  "pill": {
+    "title": "Switch provider with context compaction",
+    "label": "Switch",
+    "toProvider": "Switch to {{provider}}",
+    "toSwitchable": "Migrate to Switchable (In-Chat)"
+  },
+  "commands": {
+    "handoffDesc": "Compact context and switch this chat to another provider",
+    "handoffHint": "<provider> [model]",
+    "openSettings": "Open Provider Switch settings"
+  },
+  "settings": {
+    "general": "Switchable provider",
+    "defaultBackend": "Default backend provider",
+    "defaultBackendHint": "Initial provider used when starting a new Switchable conversation.",
+    "compaction": "Context compaction",
+    "transport": "Compaction engine",
+    "transportHint": "Auto uses the fast direct Anthropic-compatible API (~1s) and falls back to structured local compaction.",
+    "transportAuto": "Auto (Fast API + local fallback)",
+    "transportDirect": "Direct API only",
+    "transportFallback": "Local structured compaction (0ms)",
+    "compactorModel": "Compaction model",
+    "compactorModelHint": "Used when calling the direct API. deepseek-chat is fastest on DeepSeek endpoints.",
+    "keepRecentTurns": "Recent turns kept verbatim",
+    "keepRecentTurnsHint": "Keep the newest user turns intact alongside the compacted earlier summary.",
+    "handoff": "Native chat handoff",
+    "archiveSource": "Archive old chat after handoff",
+    "archiveSourceHint": "Automatically archive the original native chat after migrating to another provider.",
+    "loading": "Loading settings…",
+    "unavailable": "Settings unavailable",
+    "invalid": "Saved settings are invalid",
+    "saveError": "Could not save settings",
+    "reset": "Reset",
+    "save": "Save",
+    "saveField": "Save {{field}}"
+  },
+  "status": {
+    "handoffDone": "Switched to {{provider}} (compacted in {{ms}}ms via {{engine}})"
+  }
+}

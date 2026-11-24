@@ -1,0 +1,42 @@
+{
+  "settingsScreen": "Provider 切换",
+  "pill": {
+    "title": "压缩上下文并切换 Provider",
+    "label": "切换 Provider",
+    "toProvider": "切换到 {{provider}}",
+    "toSwitchable": "迁入 Switchable（同对话切换）"
+  },
+  "commands": {
+    "handoffDesc": "自动压缩上下文并将当前对话切换到其他 Provider",
+    "handoffHint": "<provider> [model]",
+    "openSettings": "打开 Provider 切换设置"
+  },
+  "settings": {
+    "general": "Switchable 聚合 Provider",
+    "defaultBackend": "默认底层 Provider",
+    "defaultBackendHint": "新建 Switchable 对话时默认启动的底层 Provider。",
+    "compaction": "上下文自动压缩",
+    "transport": "压缩引擎",
+    "transportHint": "自动模式优先直连高速 API（~1秒）生成摘要，异常时自动回退到本地结构化压缩。",
+    "transportAuto": "自动（高速 API + 本地回退）",
+    "transportDirect": "仅直连 API",
+    "transportFallback": "纯本地结构化压缩（0ms）",
+    "compactorModel": "压缩摘要模型",
+    "compactorModelHint": "直连 API 使用的模型；DeepSeek 端点推荐 deepseek-chat（非思考极速模型）。",
+    "keepRecentTurns": "完整保留最近轮数",
+    "keepRecentTurnsHint": "压缩早期历史时，原样保留最近几轮对话以防丢失细节。",
+    "handoff": "原生对话一键迁移",
+    "archiveSource": "迁移后自动归档旧对话",
+    "archiveSourceHint": "从原生对话一键切换到新 Provider 后，自动归档原对话标签页。",
+    "loading": "正在加载设置…",
+    "unavailable": "无法读取设置",
+    "invalid": "已保存的设置无效",
+    "saveError": "无法保存设置",
+    "reset": "重置",
+    "save": "保存",
+    "saveField": "保存{{field}}"
+  },
+  "status": {
+    "handoffDone": "已切换至 {{provider}}（压缩耗时 {{ms}}ms，引擎：{{engine}}）"
+  }
+}

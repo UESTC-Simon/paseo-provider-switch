@@ -1,0 +1,15 @@
+{
+  "id": "provider-switch",
+  "name": "Provider Switch & Compact",
+  "description": "Switch providers inside the same chat with automatic context compaction, plus one-click compact handoff for existing native chats.",
+  "translations": {
+    "zh-CN": {
+      "name": "Provider 切换与上下文压缩",
+      "description": "在同一个对话内切换 Provider 并自动压缩上下文无缝接管，同时支持已有原生对话一键压缩迁移。"
+    }
+  },
+  "media": [],
+  "requirements": {
+    "paseo": ">=0.17.3"
+  }
+}
